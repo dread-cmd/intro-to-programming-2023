@@ -15,3 +15,15 @@ for (let i = 0; i < skills.length; i++) {
     skill.innerHTML = currentSkill;
     skillList.appendChild(skill);
 }
+
+let messageForm = document.querySelector("form");
+messageForm.addEventListener('submit', function (event) {
+    event.preventDefault()
+    let usersName = event.target.usersName.value;
+    let usersEmail = event.target.usersEmail.value;
+    let usersMessage = event.target.usersMessage.value;
+    console.log(usersName, usersEmail, usersMessage);
+    event.preventDefault();
+    this.reset();
+
+});
