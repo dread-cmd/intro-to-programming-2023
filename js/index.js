@@ -8,7 +8,7 @@ footer.appendChild(copyright);
 
 let skills = ['JavaScript', 'CSS', 'HTML', 'GitHub', 'Construction', 'Cook']
 let skillsSection = document.getElementById('skills');
-let skillList = document.querySelector('ul');
+let skillList = document.getElementById('skills_ul');
 for (let i = 0; i < skills.length; i++) {
     let skill = document.createElement("li");
     let currentSkill = skills[i];
@@ -28,8 +28,8 @@ messageForm.addEventListener('submit', function (event) {
 
 
 
-    let messageSection = document.querySelector("messages");
-    let messageList = messageSection.querySelector("ul");
+
+    let messageList = document.getElementById("message_list");
     let newMessage = document.createElement("li");
     newMessage.innerHTML = `
  <a href= "mailto:${usersEmail}">${usersName}</a>

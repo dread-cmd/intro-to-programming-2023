@@ -1,0 +1,70 @@
+/* styles.css */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;500&family=Sedgwick+Ave+Display&family=Tilt+Prism&family=Wavefont:wght@300;600&display=swap');
+
+
+header {
+    font-family: 'Chakra Petch', sans-serif;
+    background-color: ghostwhite;
+    padding: 18px;
+    /* font-family: sans-serif; */
+}
+
+h1,
+h2 {
+    color: rgb(85, 114, 232);
+    background-color: rgb(213, 228, 131);
+    padding: 18px;
+}
+
+p {
+    font-size: 18px;
+}
+
+
+
+body {
+    text-align: center;
+    padding: 56px;
+    background-color: rgb(8, 48, 42);
+    color: rgb(138, 53, 223);
+    font-family: sans-serif;
+}
+
+#skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#skills-list li {
+    border: 1px solid white;
+    padding: 10px 20px;
+    width: 100px;
+    height: 75px;
+    margin: 10px 4px 30px 15px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    list-style: none;
+
+}
+
+footer {
+    background-color: rgb(240, 153, 143);
+
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: ghostwhite;
+        font-family: sans-serif
+    }
+}
+
+#submit {
+    background-color: rgb(169, 146, 143);
+}
+
+#message_list {}
