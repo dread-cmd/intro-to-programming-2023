@@ -6,15 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/index.css">
-    <title>Document</title>
+    <title>Roberto Gavino</title>
 </head>
+
 
 
 <body>
     <header>
-        <h1>Roberto Gavino</h1>
+        <h1><a href="/intro-to-programming-2023/">Roberto Gavino</a></h1>
+
         <nav>
-            <ul>
+            <ol>
                 <li>
                     <a href="#about_me">About</a>
                 </li>
@@ -24,12 +26,20 @@
                 <li>
                     <a href="#skills_section">Skills</a>
                 </li>
-            </ul>
+                <li>
+                    <a href="#message">Message</a>
+                </li>
+                <li>
+                    <a href="#connect">Connect</a>
+                </li>
+            </ol>
         </nav>
+
     </header>
 
-    <section>
-        <h1 id="about_me">About me</h1>
+
+    <main>
+        <h2 id="about_me">About me</h2>
         <p>Formely brought to the USA at 10 years old, I chose work over school and found my stride in various
             restaurant
             roles. After a few years, I transitioned to construction, accumulating 4 years of experience. Currently,
@@ -40,44 +50,45 @@
             2-year-old son, my journey weaves between construction site, coding projects, and the joys of
             fatherhood.
         </p>
-    </section>
-    <section>
-        <h1 id="experience">Experience</h1>
-        <p>Though my professional roots lie in construction and restaurant role, I've been immersing myself in the
-            world
-            of
-            coding, particularly focusing on JavaScript and mastering the trio of HTML, CSS and JavaScript. Despite
-            limited
-            experience in coding compared to my extensive background in other fields, my enthusiasm for learning and
-            evolving in the coding realm is palpable.
-            Excited about the possibilities this new skill set brings, I egerly embrace each challenge that comes my
-            way.
-        </p>
-    </section>
-    <section>
-        <h1 id="connect">Connect</h1>
-        <a href="https://github.com/dread-cmd">Github</a>
-    </section>
-    <section>
-        <h1 id="skills_section">Skills</h1>
-        <div id="skills">
-            <ul id="skills_ul"></ul>
-        </div>
-    </section>
-    <section>
-        <h2 id="message">Leave me a message</h2>
-        <form>
-            <input id="usersName" type="text" name="usersName" required />
-            <input id="usersEmail" type="email" name="usersEmail" required />
-            <textarea id="usersMessage" name="usersMessage" required></textarea>
-            <button type="submit">Submit!</button>
-        </form>
-    </section>
-    <section id="messages">
-        <h2>Messagess</h2>
-        <ul id="message_list"></ul>
+        </section>
+        <section id="experience">
+            <h2>Experience</h2>
+            <p>Though my professional roots lie in construction and restaurant role, I've been immersing myself in the
+                world
+                of
+                coding, particularly focusing on JavaScript and mastering the trio of HTML, CSS and JavaScript. Despite
+                limited
+                experience in coding compared to my extensive background in other fields, my enthusiasm for learning and
+                evolving in the coding realm is palpable.
+                Excited about the possibilities this new skill set brings, I egerly embrace each challenge that comes my
+                way.
+            </p>
+        </section>
+        <section id="connect">
+            <h2>Connect</h2>
+            <a href="https://github.com/dread-cmd">Github</a>
+        </section>
+        <section id="skills_section">
+            <h2>Skills</h2>
+            <div id="skills">
+                <ul id="skills_ul"></ul>
+            </div>
+        </section>
+        <section id="message">
+            <h2>Leave a Message</h2>
+            <form name="message">
+                <input id="usersName" type="text" name="usersName" required />
+                <input id="usersEmail" type="email" name="usersEmail" required />
+                <textarea id="usersMessage" name="usersMessage" required></textarea>
+                <button type="submit">Submit!</button>
+            </form>
+        </section>
+        <section id="messages">
+            <h2>Messagess</h2>
+            <ul id="message_list"></ul>
 
-    </section>
+        </section>
+    </main>
     <footer></footer>
     <script src="js/index.js"></script>
 </body>

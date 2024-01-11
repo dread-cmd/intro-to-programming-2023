@@ -68,3 +68,7 @@ footer {
 }
 
 #message_list {}
+
+li {
+    list-style-type: none;
+}
