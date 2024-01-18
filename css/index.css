@@ -39,6 +39,10 @@ body {
     justify-content: center;
 }
 
+.link--no-decor {
+    color: antiquewhite;
+}
+
 #skills-list li {
     border: 1px solid white;
     padding: 10px 20px;
