@@ -49,6 +49,7 @@ messageForm.addEventListener('submit', function (event) {
     messageForm.reset();
 });
 
+// when creating branch 6.2 delete this line of code.
 function renderProjectsWithXHR() {
     const githubRequest = new XMLHttpRequest()
 
@@ -94,7 +95,7 @@ function renderProjectsWithFetch() {
             }
         })
 }
-
+//the end
 document.addEventListener('DOMContentLoaded', () => {
 
     // renderProjectsWithXHR()
