@@ -16,6 +16,8 @@ for (let i = 0; i < skills.length; i++) {
     skillList.appendChild(skill);
 }
 
+
+
 let messageForm = document.querySelector("form");
 messageForm.addEventListener('submit', function (event) {
     event.preventDefault()
@@ -46,3 +48,57 @@ messageForm.addEventListener('submit', function (event) {
     messageList.appendChild(newMessage);
     messageForm.reset();
 });
+
+// when creating branch 6.2 delete this line of code.
+function renderProjectsWithXHR() {
+    const githubRequest = new XMLHttpRequest()
+
+    githubRequest.open('GET', 'https://api.github.com/users/dread-cmd/repos')
+
+    githubRequest.addEventListener('load', function () {
+        const data = JSON.parse(this.response)
+
+        // filter out irrelevant repositories
+        const filteredData = data.filter((repo) =>
+            repo.name.includes('intro-to-programming')
+        )
+
+        const projectSection = document.querySelector('#projects')
+        const projectList = projectSection.querySelector('ul')
+
+        for (let repository of filteredData) {
+            const project = document.createElement('li')
+            project.innerHTML = `<a class="link link--no-decor" href="${repository.html_url}">${repository.name}</a>`
+            projectList.appendChild(project)
+        }
+    })
+
+    githubRequest.send()
+}
+
+function renderProjectsWithFetch() {
+    fetch('https://api.github.com/users/dread-cmd/repos')
+        .then((res) => res.json())
+        .then((data) => {
+            // filter out irrelevant repositories
+            const filteredData = data.filter((repo) =>
+                repo.name.includes('intro-to-programming')
+            )
+
+            const projectSection = document.querySelector('#projects')
+            const projectList = projectSection.querySelector('ul')
+
+            for (let repository of filteredData) {
+                const project = document.createElement('li')
+                project.innerHTML = `<a class="link link--no-decor" href="${repository.html_url}">${repository.name}</a>`
+                projectList.appendChild(project)
+            }
+        })
+}
+//the end
+document.addEventListener('DOMContentLoaded', () => {
+
+    // renderProjectsWithXHR()
+    renderProjectsWithFetch()
+})
+//})()
