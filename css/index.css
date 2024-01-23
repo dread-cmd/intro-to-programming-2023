@@ -7,7 +7,6 @@
 
 header {
     font-family: 'Chakra Petch', sans-serif;
-    background-color: ghostwhite;
     padding: 18px;
     /* font-family: sans-serif; */
 }
@@ -72,3 +71,7 @@ footer {
 }
 
 #message_list {}
+
+.image--small {
+    width: 70px;
+}
