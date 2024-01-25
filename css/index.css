@@ -7,7 +7,6 @@
 
 header {
     font-family: 'Chakra Petch', sans-serif;
-    background-color: ghostwhite;
     padding: 18px;
     /* font-family: sans-serif; */
 }
@@ -56,7 +55,7 @@ body {
 }
 
 footer {
-    background-color: rgb(240, 153, 143);
+    background-color: rgb(213, 228, 131);
 
 }
 
@@ -71,4 +70,35 @@ footer {
     background-color: rgb(169, 146, 143);
 }
 
-#message_list {}
+ul {
+    list-style-type: none;
+}
+
+.photo--small {
+    width: 100px;
+
+}
+
+.photo {
+    max-width: 100%;
+    display: block;
+    margin-left: 48%;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:active {
+    text-decoration: underline;
+}
